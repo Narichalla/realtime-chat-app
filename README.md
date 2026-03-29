@@ -69,35 +69,23 @@ npm install
 npm run dev
 ```
 
-open http://localhost:3000 with your browser to see the result.
+open http://localhost:3000 with your browser to see the result
 
-### 📷 Screenshots
+## 🤖 AI Chat Feature (Gemini API)
 
-`SIGNING UP & SIGNING IN:`
-![signup](https://github.com/user-attachments/assets/9f656b5b-bdd6-42be-9293-e44f52ca0359)
-![signin](https://github.com/user-attachments/assets/7f9e478c-c802-437d-acae-10794bf12392)
+This app includes an AI assistant powered by Google Gemini. A floating 🤖 button appears on the chat page — click it to open the AI chat panel.
 
-`SETTING UP YOUR PROFILE:`
-![profile-landing](https://github.com/user-attachments/assets/25656c2d-9dcf-4f11-a242-b8e90745a84f)
+---
 
-`SENDING & VIEWING FRIEND REQUESTS:`
-![send-friend-request](https://github.com/user-attachments/assets/3e5d6bd1-5110-4452-8c73-4d159661719d)
-![friend-requests](https://github.com/user-attachments/assets/a81c0290-ff62-4f01-9792-de9be3ff30af)
+### Setup
 
-`DIRECT MESSAGING:`
-![start-new-chat](https://github.com/user-attachments/assets/95dada0c-b57f-438f-87ec-b7c219b18880)
-![chats](https://github.com/user-attachments/assets/5ca65d19-c537-419e-984d-533a7d939aaf)
+#### 1. Get a Gemini API Key
+- Go to [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+- Sign in with your Google account
+- Click **"Create API Key"**
+- Copy the key
 
-`GROUP MESSAGING:`
-![create-group](https://github.com/user-attachments/assets/cae7f705-9665-4c32-973b-c3fd89d75c60)
-![group-chat](https://github.com/user-attachments/assets/8c070f09-e482-47de-8b48-d059f453b6b6)
+#### 2. Add it to your environment file
 
-`SEARCH FUNCTIONALITY:`
-![search-chats](https://github.com/user-attachments/assets/a01e754f-8a12-4b95-abcb-d4060a8a9a0d)
-
-`UPDATING YOUR PROFILE:`
-![profile-update](https://github.com/user-attachments/assets/858fc66f-5e2d-4ae6-b2a8-ea5b00315501)
-
-`VIEWING FRIEND & GROUP PROFILE:`
-![friend-info](https://github.com/user-attachments/assets/c577cda1-1f15-4c74-a367-73661c56a5bc)
-![group-info](https://github.com/user-attachments/assets/bcb770e9-aea9-4b42-bcfd-02ae935d19fd)
+Open `server/.env` and add:
+```env

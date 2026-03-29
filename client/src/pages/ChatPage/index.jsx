@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import ChatList from "../../components/ChatPageComponents/ChatList";
 import LeftSidebar from "../../components/ChatPageComponents/LeftSidebar";
 import SingleChat from "../../components/ChatPageComponents/SingleChat";
+import AiChatButton from "../../components/ChatPageComp/AiChat/AiChatButton";
 import { useAppStore } from "../../store";
 import "./ChatPage.css";
 import { toast } from "react-toastify";
@@ -45,6 +46,7 @@ const ChatPage = () => {
       <LeftSidebar />
       <ChatList />
       <SingleChat />
+      <AiChatButton />
     </div>
   );
 };

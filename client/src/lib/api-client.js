@@ -1,6 +1,7 @@
 import axios from "axios";
 import { HOST } from "../utils/constants";
 
-export const apiClient = axios.create({
-  baseURL: HOST,
-});
+export const sendAiMessage = async (message, history = []) => {
+  const res = await axiosInstance.post("/ai/chat", { message, history });
+  return res.data;
+};
